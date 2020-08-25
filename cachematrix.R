@@ -37,6 +37,6 @@ cacheSolve <- function(x, ...) {
   matrix <- x$get()
   m <- solve(matrix, ...)
   x$setinverse(m)
-  # return the cached matrix if possible
+  # return the cached matrix if necessary
   m
 }
